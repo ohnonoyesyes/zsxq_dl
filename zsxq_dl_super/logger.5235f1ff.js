@@ -1,0 +1,1 @@
+import{L as e}from"./config.e27a43c6.js";let i=e.All;function f(o,...n){i<=e.Error&&console.error(o,...n)}function c(o,...n){i<=e.Warn&&console.warn(o,...n)}function l(o,...n){i<=e.Info&&console.info(o,...n)}function r(o,...n){i<=e.Debug&&console.debug(o,...n)}function t(o){i=o}const u={d:r,i:l,w:c,e:f,init:t};export{u as l};

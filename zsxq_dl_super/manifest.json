@@ -1,0 +1,35 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "assets/icons/icon_128.png",
+         "16": "assets/icons/icon_16.png",
+         "32": "assets/icons/icon_32.png",
+         "48": "assets/icons/icon_48.png"
+      },
+      "default_popup": "popup/index.html",
+      "default_title": "星球伴侣（无限下载版） - 知识星球助手"
+   },
+   "background": {
+      "service_worker": "background/main.js"
+   },
+   "content_scripts": [ {
+      "css": [ "content/main.9e735f25.css" ],
+      "js": [ "content/main.js" ],
+      "matches": [ "https://wx.zsxq.com/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "简单好用的知识星球效率工具，可以帮助你批量下载文档，解放双手",
+   "icons": {
+      "128": "assets/icons/icon_128.png",
+      "16": "assets/icons/icon_16.png",
+      "32": "assets/icons/icon_32.png",
+      "48": "assets/icons/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw3BUOTevlaDMiEqc8VLITlS1ee4O4hYxabP9wa9ytdReyyX5RjhV0lNfhPXreeOPksZzrVxekRt+0Nw8PsXH7EyGejdk60caY/lTVATvFIsqAzspce6ODgfiDI0VgO5iRwNdkf1XpcdEEQpmPOWtfalw8fJayc/KuorDgaE49qfo6usz80AL479bGP3Zaiivm85i4ejH3bYZiTJnjMEpBMAYVL4+lWbpvA8GbTfwk9Ty4X6hTu+NUvdhrOo3dJGeSsZoLHmYxxgftezRFFAqFz4Z0Zd+jjI6znGg9YjlXbIzf6EfwSJ1zTh4VXiH3kIZMbacIxWQWD75ewM3PvxANwIDAQAB",
+   "manifest_version": 3,
+   "name": "星球伴侣（无限下载版） - 知识星球助手",
+   "options_page": "options/index.html",
+   "permissions": [ "downloads", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.2"
+}
